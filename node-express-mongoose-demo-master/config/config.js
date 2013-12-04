@@ -15,7 +15,7 @@ var path = require('path')
 
 module.exports = {
     development: {
-        db: 'mongodb://192.168.2.104/noobjs_dev',
+        db: 'mongodb://127.0.0.1/noobjs_dev',
         root: rootPath,
         notifier: notifier,
         app: {
@@ -57,27 +57,27 @@ module.exports = {
         facebook: {
             clientID: "APP_ID",
             clientSecret: "APP_SECRET",
-            callbackURL: "http://localhost:3000/auth/facebook/callback"
+            callbackURL: "http://127.0.0.1:3000/auth/facebook/callback"
         },
         twitter: {
             clientID: "CONSUMER_KEY",
             clientSecret: "CONSUMER_SECRET",
-            callbackURL: "http://localhost:3000/auth/twitter/callback"
+            callbackURL: "http://127.0.0.1:3000/auth/twitter/callback"
         },
         github: {
             clientID: 'APP_ID',
             clientSecret: 'APP_SECRET',
-            callbackURL: 'http://localhost:3000/auth/github/callback'
+            callbackURL: 'http://127.0.0.1:3000/auth/github/callback'
         },
         google: {
             clientID: "APP_ID",
             clientSecret: "APP_SECRET",
-            callbackURL: "http://localhost:3000/auth/google/callback"
+            callbackURL: "http://127.0.0.1:3000/auth/google/callback"
         },
         linkedin: {
             clientID: "CONSUMER_KEY",
             clientSecret: "CONSUMER_SECRET",
-            callbackURL: "http://localhost:3000/auth/linkedin/callback"
+            callbackURL: "http://127.0.0.1:3000/auth/linkedin/callback"
         }
     },
     production: {}
